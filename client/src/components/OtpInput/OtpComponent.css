@@ -1,0 +1,147 @@
+/* Center the component */
+
+.otp-main-component{
+  width: 1250px;
+}
+.otp-component {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  transition: box-shadow 0.3s ease;
+}
+
+.otp-component:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 26px;
+  /* color: #222; */
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.otp-description {
+  font-size: 16px;
+  /* color: #666; */
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.otp-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.otp-input {
+  width: 45px;
+  height: 55px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  /* background-color: #fff; */
+  /* color: #333; */
+}
+
+.otp-input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+}
+
+.otp-input:hover {
+  border-color: #007bff;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px 18px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  background-color: #003d80;
+  transform: translateY(0);
+}
+
+/* Additional styling for input fields */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  /* color: #444; */
+  margin-bottom: 8px;
+}
+
+.email-input, .password-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  /* background-color: #fff; */
+}
+
+.email-input:focus, .password-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.email-input:hover, .password-input:hover {
+  border-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .otp-component {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .otp-description {
+    font-size: 14px;
+  }
+
+  .otp-input {
+    width: 40px;
+    height: 50px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}

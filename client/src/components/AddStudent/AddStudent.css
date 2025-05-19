@@ -1,0 +1,130 @@
+/* Add Student Container */
+.add-student-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Reduce padding for smaller screens */
+  box-sizing: border-box;
+}
+
+/* Add Student Card */
+.add-student-card {
+  margin-top: 40px;
+  /* background: #1e1e1e; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+.add-student-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  /* color: #f5f5f5; */
+}
+
+/* Input Group */
+.add-student-input-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Input Row */
+.add-student-input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+}
+
+/* Labels */
+.add-student-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  /* color: #bdbdbd; */
+}
+
+/* Inputs and Selects */
+.add-student-input,
+.add-student-select {
+  width: 100%;
+  padding: 10px;
+  /* background-color: #2a2a2a; */
+  /* color: #e0e0e0; */
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-student-input:focus,
+.add-student-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button Container */
+.add-student-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.add-student-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-student-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .add-student-card {
+    padding: 15px;
+  }
+
+  .add-student-title {
+    font-size: 1.6rem;
+  }
+
+  .add-student-input-row {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .add-student-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 480px) {
+  .add-student-title {
+    font-size: 1.4rem;
+  }
+
+  .add-student-input,
+  .add-student-select {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .add-student-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}

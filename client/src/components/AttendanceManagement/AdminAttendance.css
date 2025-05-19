@@ -1,0 +1,143 @@
+/* src/pages/AdminAttendance.css */
+
+.admin-attendance-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* background-color: #2c2c2c; */
+  padding: 10px; /* Add some padding for better layout */
+}
+
+@media (min-width: 768px) {
+  .admin-attendance-page {
+    flex-direction: row;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  padding: 10px;
+  /* background-color: #2c2c2c; */
+  color: #e0e0e0; /* Light text */
+  overflow-y: auto;
+  width: 100%; /* Ensure content spans full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+.attendance-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.attendance-head-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.attendance-head-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* color: #e0e0e0; */
+}
+
+.attendance-head-left p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  /* color: #a0a0a0; */
+}
+
+.attendance-head-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 200px;
+}
+
+.filters {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filters label {
+  font-weight: bold;
+  /* color: #e0e0e0;  */
+}
+
+.filters select,
+.filters input {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid #6c757d; /* Subtle gray border */
+  border-radius: 5px;
+  background-color: #444; /* Match input background with card theme */
+  color: #e0e0e0; /* Light text in inputs */
+  max-width: 100%;
+}
+
+.filters select::placeholder,
+.filters input::placeholder {
+  color: #a0a0a0; /* Softer placeholder text */
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #6c757d;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  /* background-color: #444; */
+  /* color: #e0e0e0; */
+}
+
+table tr:nth-child(even) {
+  /* background-color: #2f3b45; */
+}
+
+table tr:hover {
+  background-color: #4e5b66; /* Lighter hover effect */
+}
+
+button {
+  /* padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 4px #007bff; /* Focus outline */
+}
+.attendance-student-submit {
+  width: 100%; /* Make the button span full width */
+  max-width: 300px; /* Limit the button width */
+  margin: 0 auto; /* Center-align button */
+  display: block;
+}

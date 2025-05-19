@@ -1,0 +1,14 @@
+.horizontal-card-section{
+    height: auto;
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 25px;
+    box-sizing: border-box;
+    max-height: 80vh;
+    overflow-y: auto;
+    /* background-color: #121212; */
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

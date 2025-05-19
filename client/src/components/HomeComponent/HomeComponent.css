@@ -1,0 +1,85 @@
+
+.home-container {
+  max-width: 100%; /* Ensures container adapts to screen width */
+  padding: 20px;
+  margin: 0 auto;
+  height: auto; /* Allow height to adjust based on content */
+  min-height: 94vh;
+  /* background-color: #181818; */
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  /* color: #e0e0e0; */
+}
+
+
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #6c63ff; /* Button with contrasting color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.toggle-button:hover {
+  background-color: #584de3; /* Hover effect with a darker shade */
+}
+/* Optional: Styling for the Grid View and List View toggle */
+.view-toggle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-toggle-button {
+  margin-right: 15px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid grey;
+  color: #fefeff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-toggle button:hover {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .toggle-button {
+    width: 100%; /* Full width on small screens */
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .header {
+    font-size: 20px; /* Smaller header text */
+  }
+
+  .filter-input,
+  .filter-dropdown {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px 10px;
+  }
+
+  .toggle-button {
+    font-size: 12px; /* Adjust font size for small buttons */
+    padding: 8px 10px;
+  }
+}

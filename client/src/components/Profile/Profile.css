@@ -1,0 +1,471 @@
+/* General Dark Theme Settings */
+.profile-image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-preview-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button.save-button {
+  background-color: #28a745; /* Green for Save */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.save-button:hover {
+  background-color: #218838;
+}
+
+button.cancel-button {
+  background-color: #dc3545; /* Red for Cancel */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.popup-content {
+  background: rgb(97, 95, 95);
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  animation: slideInFromTop 0.5s ease-in-out;
+}
+.popup-form-row {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form-row label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.popup-form-row input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile-page-container {
+  width: 1250px;
+  display: flex;
+  justify-content: center;
+  height: 94vh;
+  /* background-color: #181818; */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.profile-page-card {
+  /* background: #1f1f1f; */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for dark mode */
+  width: 100%;
+  display: flex;
+}
+
+.profile-page-left-column {
+  width: 50%;
+  padding: 20px;
+  /* background: #2c2c2c; */
+  display: flex;
+  flex-direction: column;
+  border-right: 2px dotted #444; /* Light dotted line */
+}
+
+.profile-page-right-column {
+  width: 50%;
+  padding: 20px;
+  /* background: #1f1f1f; */
+}
+
+.profile-page-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-page-header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-page-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1f1f1f; /* Dark border */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.profile-page-header-text h1 {
+  font-size: 1.8em;
+  /* color: #e0e0e0; */
+}
+
+.profile-page-roll-no {
+  font-size: 1em;
+  opacity: 0.8;
+  /* color: #b0b0b0; */
+}
+
+.profile-page-camera-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  /* background: rgba(0, 0, 0, 0.7); */
+  /* color: white; */
+  padding: 10px;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.profile-page-photo:hover + .profile-page-camera-icon {
+  opacity: 1;
+}
+
+.profile-page-photo:hover {
+  transform: scale(1.1);
+}
+
+.profile-page-photo-container {
+  position: relative;
+  display: inline-block;
+}
+.profile-page-details {
+  width: 100%;
+}
+
+.profile-page-detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.profile-page-detail-left {
+  width: 48%; /* Make each detail take half the row */
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-page-detail-right {
+  width: 48%; /* Make each detail take half the row */
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+}
+
+.profile-page-detail label {
+  font-weight: bold;
+}
+
+.profile-page-detail p {
+  margin: 0;
+}
+
+.profile-page-detail-row p {
+  margin-left: 10px;
+  /* color: #e0e0e0; */
+}
+
+.profile-page-detail-row label {
+  font-weight: bold;
+  /* color: #e0e0e0; */
+}
+
+.profile-page-projects h2 {
+  font-size: 1.5em;
+  /* margin-bottom: 10px; */
+  /* color: #e0e0e0; */
+}
+/* .profile-page-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+} */
+.profile-page-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profile-project-row {
+  display: flex;
+  justify-content: space-between; /* Ensures two items are side by side */
+  gap: 16px; /* Space between the two items */
+}
+
+.profile-project-data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between rows */
+}
+/* .profile-page-project-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+} */
+.profile-page-project-card, .no-project-card {
+  flex: 1;
+  min-width: 300px; /* Adjust this based on your design */
+  max-width: 100%; /* Adjust this based on your design */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  min-height: 300px;
+  max-height: 320px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin: 2px 0; */
+}
+.no-project-card h2{
+  text-align: center;
+}
+.no-project-card p{
+  text-align: center;
+}
+.profile-page-project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-page-project-category {
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.profile-page-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  /* color: white; */
+}
+
+.profile-page-button.primary {
+  background: #6c63ff;
+}
+
+.profile-page-button.primary:hover {
+  background: #584de3;
+}
+.social-links a {
+  color: #000;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.social-links a.disabled-link {
+  opacity: 0.4;
+  pointer-events: none; /* Disable clicking */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-page-detail-row {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    gap: 8px;
+  }
+  .profile-page-detail-right{
+    padding-left: 0;
+  }
+  .profile-page-detail-left{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .profile-page-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .profile-page-card {
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .profile-page-left-column,
+  .profile-page-right-column {
+    width: 100%;
+    padding: 15px;
+    border-right: none;
+  }
+
+  .profile-page-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-page-header-text h1 {
+    font-size: 1.5em;
+  }
+
+  .profile-page-project-card {
+    padding: 8px;
+    gap: 15px;
+  }
+
+  .profile-page-project-image {
+    height: 100px;
+  }
+
+  .profile-page-projects {
+    gap: 15px;
+  }
+
+  .profile-page-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
+
+
+.profile-page-table-container {
+  /* margin-top: 20px; */
+  overflow-x: auto;
+}
+.profile-page-table-container::-webkit-scrollbar {
+  height: 8px; /* Thickness of the scrollbar */
+}
+
+.profile-page-table-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.profile-page-table-container::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+.profile-page-table-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar color on hover */
+}
+
+.profile-page-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.profile-page-table th,
+.profile-page-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.profile-page-table th {
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .profile-page-table th,
+  .profile-page-table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+}

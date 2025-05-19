@@ -1,0 +1,143 @@
+/* Improved DeveloperPage.css with animations, hover effects, and responsiveness */
+
+.developer-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(to right, #ece9e6, #ffffff); */
+    min-height: 100vh;
+}
+
+.developer-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    /* color: #222; */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.developer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.developer-card {
+    /* background: white; */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.developer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.developer-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #0077b5;
+}
+
+.developer-name {
+    font-size: 1.8rem;
+    /* color: #222; */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.developer-info {
+    font-size: 1.1rem;
+    /* color: #555; */
+    margin: 5px 0;
+}
+
+.developer-skills {
+    font-size: 1rem;
+    color: #666;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.developer-links {
+    margin-top: 10px;
+}
+
+.developer-link {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.developer-link:hover {
+    text-decoration: underline;
+    color: #004471;
+}
+
+.feedback-section {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.feedback-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.feedback-button {
+    font-size: 1.2rem;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.feedback-button:hover {
+    transform: scale(1.1);
+}
+
+.active-like {
+    background-color: #28a745;
+    color: white;
+    animation: pop 0.3s ease-in-out;
+}
+.active-like:hover{
+    background-color: #28a745;
+    color: white;
+    animation: pop 0.3s ease-in-out;
+}
+.active-dislike {
+    background-color: #dc3545;
+    color: white;
+    animation: pop 0.3s ease-in-out;
+}
+.active-dislike:hover {
+    background-color: #dc3545;
+    color: white;
+    animation: pop 0.3s ease-in-out;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .developer-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .developer-card {
+        width: 90%;
+    }
+}

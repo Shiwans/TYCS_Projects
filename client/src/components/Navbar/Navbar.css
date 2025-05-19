@@ -1,0 +1,101 @@
+/* Navbar styles for smaller screens */
+
+@media screen and (max-width: 768px) {
+  /* Ensure the navbar uses full width and aligns properly */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Ensures proper spacing */
+    width: 100%;
+    padding: 10px 15px;
+    /* background-color: #333; */
+  }
+  .navbar-left {
+    flex: 1; /* Takes available space */
+  }
+  .navbar-brand{
+    display: flex;
+  }
+  .navbar-brand h1 {
+    font-size: 1.2em;
+    text-align: left; /* Aligns text to the left */
+    /* color: white; */
+    margin-top: 10px;
+  }
+  .navbar-right {
+    position: relative;
+    z-index: 1000;
+    padding: 10px; /* Add padding so the cross isn't clipped */
+  }
+  
+
+  /* Ensure the hamburger menu is positioned correctly */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    position: relative; /* Ensure it stays positioned correctly */
+  }
+  .navbar-right, .hamburger {
+    overflow: visible !important;
+  }
+  
+
+  /* Style for each line */
+  .line {
+    width: 30px;
+    height: 3px;
+    /* background-color: white; */
+    transition: all 0.3s;
+  }
+  .line.open {
+    transform: translateY(8px) rotate(45deg);
+    position: relative;
+  }
+
+  .line.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line.open:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+    position: relative;
+  }
+
+  /* Navbar links on mobile */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    height: 100vh; /* Full height */
+    z-index: 999; /* Ensure it's on top of other content */
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); /* Initially offscreen */
+    padding-top: 50px; /* Add some padding from the top */
+  }
+
+  /* When the menu is active, slide the navbar in */
+  .navbar-links.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .navbar-link {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #575757;
+    color: white;
+  }
+
+  .navbar-link:hover {
+    /* background-color: #575757; */
+  }
+}

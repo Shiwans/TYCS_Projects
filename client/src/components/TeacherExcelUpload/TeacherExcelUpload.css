@@ -1,0 +1,195 @@
+.teacher-excel-upload-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.teacher-excel-upload-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.teacher-excel-upload-dropzone {
+    border: 2px dashed #007bff; 
+    padding: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.teacher-excel-upload-dropzone:hover {
+    transform: scale(1.05);
+}
+
+.teacher-excel-upload-dropzone input {
+    display: none;
+}
+
+.dropzone-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.dropzone-overlay p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.file-info {
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.teacher-excel-upload-table {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.teacher-excel-upload-table th,
+.teacher-excel-upload-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.teacher-excel-upload-table th {
+    font-weight: bold;
+}
+
+.teacher-excel-upload-table tr:nth-child(even) {
+    /* background-color: #fafafa; */
+}
+
+.teacher-excel-upload-table tr:hover {
+    /* background-color: #f1f1f1; */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dropzone-overlay {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1rem; /* Reduces font size for smaller screens */
+        padding: 0 8px; /* Smaller padding for smaller screens */
+        white-space: normal; /* Allows the text to wrap to the next line if necessary */
+    }
+    .teacher-excel-upload-container {
+        padding: 1rem;
+    }
+
+    .teacher-excel-upload-title {
+        font-size: 1.25rem;
+    }
+
+    .teacher-excel-upload-dropzone {
+        padding: 2rem;
+    }
+
+    .teacher-excel-upload-table th,
+    .teacher-excel-upload-table td {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+}
+
+/* Excel Template Section */
+.excel-template-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.excel-template-image {
+    width: 100%;
+    max-width: 700px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.template-info {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Responsive Image */
+@media (max-width: 600px) {
+    .dropzone-overlay {
+        font-size: 0.9rem; /* Reduces font size further for very small screens */
+        padding: 0 5px; /* Further reduces padding for mobile screens */
+        white-space: normal; /* Text will wrap to the next line */
+    }
+    .excel-template-image {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .template-info {
+        font-size: 12px;
+    }
+}
+
+/* Responsive Buttons */
+@media (max-width: 600px) {
+    .table-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-button, .continue-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Buttons Container */
+.table-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.back-button, .continue-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+.back-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.continue-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+.continue-button:hover {
+    background-color: #388e3c;
+}

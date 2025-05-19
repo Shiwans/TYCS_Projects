@@ -1,0 +1,171 @@
+.my-project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 90vh;
+  padding: 0px;
+  color: #ffffff;
+}
+/* .my-project-container {
+  width: 100%; /* Ensure full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+  justify-content: center; /* Align content properly */
+} */
+.editing-mode {
+  width: 100%; /* Ensure full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+}
+
+.editing-mode .project-card-container {
+  display: none; /* Hide other project cards when editing */
+}
+
+.event-details-form {
+  width: 100%;
+  max-width: 800px; /* Adjust based on design */
+}
+
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.my-project-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.projectCard {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 280px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid #444444;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.add-project-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-project-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.create-project-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.project-titles {
+  overflow-wrap: break-word;
+  width: 190px;
+}
+
+.project-image {
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .my-project-container {
+    padding: 10px;
+  }
+
+  .projectCard {
+    width: 150px; /* Reduced card width */
+    height: 220px; /* Adjusted height */
+    margin-left: 10px; /* Reduced left margin */
+  }
+
+  .my-project-header {
+    font-size: 1.5rem; /* Adjusted header font size */
+    margin-bottom: 15px; /* Adjusted margin */
+  }
+
+  .add-project-btn {
+    font-size: 2.5rem; /* Smaller button size */
+    width: 60px; /* Smaller button */
+    height: 60px; /* Smaller button */
+  }
+
+  .project-card-container {
+    flex-direction: column; /* Stack project cards vertically on mobile */
+    align-items: center; /* Center the cards */
+  }
+
+  .project-titles {
+    width: 170px; /* Adjusted width */
+    text-align: center; /* Center the titles */
+  }
+
+  .project-image {
+    width: 80px; /* Reduced image size */
+    height: 80px; /* Reduced image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+    width: 200px; /* Further reduce width on smaller screens */
+    height: 280px; /* Adjust height */
+  }
+
+  .my-project-header {
+    font-size: 1.2rem; /* Further adjust header font size */
+  }
+
+  .add-project-btn {
+    font-size: 2rem; /* Further reduce button size */
+    width: 50px; /* Smaller button */
+    height: 50px; /* Smaller button */
+  }
+
+  .create-project-text {
+    font-size: 1rem; /* Adjust text size */
+  }
+
+  .project-titles {
+    width: 150px; /* Adjust width for very small screens */
+  }
+
+  .project-image {
+    width: 70px; /* Smaller image size */
+    height: 70px; /* Smaller image size */
+  }
+}

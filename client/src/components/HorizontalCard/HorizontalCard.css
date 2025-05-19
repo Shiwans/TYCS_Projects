@@ -1,0 +1,127 @@
+.horizontal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Full width */
+  height: auto; /* Adjust height dynamically */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1px 1px; /* Reduced padding for smaller screens */
+  margin-bottom: 6px;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.horizontal-card-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  /* margin-bottom: 8px; */
+}
+
+.horizontal-card-profile-pic {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  margin-left: 2px;
+  border: 2px solid #ddd;
+}
+
+.horizontal-card-name-roll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.horizontal-card-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.horizontal-card-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 2;
+  margin-bottom: 8px; /* Add spacing for smaller screens */
+}
+
+.horizontal-card-roll {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.horizontal-card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 0 0;
+}
+
+.horizontal-card-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.horizontal-card-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  max-width: 120px;
+  transition: background-color 0.3s ease;
+}
+
+.horizontal-card-button:hover {
+  /* Add hover effect */
+}
+
+@media screen and (max-width: 768px) {
+  .horizontal-card {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .horizontal-card-left,
+  .horizontal-card-middle,
+  .horizontal-card-right {
+    flex: 1;
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 8px; /* Add spacing */
+  }
+
+  .horizontal-card-right {
+    justify-content: center; /* Center the button */
+  }
+
+  .horizontal-card-button {
+    width: 100%; /* Full width button */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .horizontal-card {
+    padding: 8px; /* Reduce padding further */
+  }
+
+  .horizontal-card-name {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .horizontal-card-roll,
+  .horizontal-card-title {
+    font-size: 12px; /* Smaller text for mobile */
+  }
+
+  .horizontal-card-button {
+    font-size: 12px; /* Smaller button text */
+    padding: 4px 8px; /* Adjust padding */
+  }
+}

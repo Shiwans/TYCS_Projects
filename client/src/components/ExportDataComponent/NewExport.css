@@ -1,0 +1,147 @@
+/* Container for the whole ExportDataComponent */
+.export-data-container {
+    width: 80%;
+    max-width: 600px;
+    max-height: 90vh;
+    margin: 20px auto;
+    padding: 30px;
+    /* background-color: #1e1e2f; */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Larger, softer shadow */
+    /* color: #f5f5f5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading styling */
+.export-data-heading {
+    text-align: center;
+    font-size: 28px;
+    /* color: #f5f5f5; */
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Form container with vertical layout */
+.export-data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Label and checkbox styling */
+.export-data-label {
+    font-size: 18px;
+    /* color: #e0e0e0; */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Improved checkbox appearance */
+.export-data-checkbox {
+    accent-color: #42a5f5; /* Sky-blue color for checkboxes */
+}
+
+/* Select dropdown styling */
+.export-data-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.export-data-select {
+    padding: 10px;
+    /* background-color: #333348; */
+    /* color: #fff; */
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.export-data-select:focus {
+    outline: none;
+    border-color: #42a5f5;
+}
+
+/* Button styling */
+.export-data-button {
+    padding: 15px 25px;
+    /* background-color: #42a5f5; */
+    /* color: white; */
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width */
+    text-align: center;
+    font-weight: bold;
+}
+
+.export-data-button:hover {
+    /* background-color: #1e88e5; */
+}
+
+.export-data-button:disabled {
+    /* background-color: #7b8d98; */
+    cursor: not-allowed;
+}
+
+/* Styling for each checkbox item wrapper */
+.export-data-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* background-color: #2c2c3e; */
+    padding: 6px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.export-data-checkbox-item:hover {
+    /* background-color: #333348; */
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    .export-data-container {
+        width: 95%; /* Full width for smaller screens */
+        padding: 25px; /* Adjusted padding for better mobile feel */
+    }
+
+    .export-data-heading {
+        font-size: 24px; /* Slightly smaller heading on mobile */
+    }
+
+    .export-data-form {
+        gap: 8px; /* Reduced gap between form elements */
+    }
+
+    .export-data-label {
+        font-size: 16px; /* Slightly smaller label text */
+    }
+
+    .export-data-button {
+        padding: 18px; /* Adjusted padding for mobile */
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .export-data-container {
+        width: 85%;
+    }
+
+    .export-data-heading {
+        font-size: 26px;
+    }
+
+    .export-data-button {
+        padding: 18px 25px;
+    }
+}

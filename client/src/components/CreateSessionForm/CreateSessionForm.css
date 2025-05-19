@@ -1,0 +1,111 @@
+
+/* Form container */
+.create-session-form {
+  max-width: 90%; /* Adjust width for smaller screens */
+  width: 400px; /* Default width */
+  margin: 20px auto; /* Center form with flexible margin */
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  /* background-color: #1e1e1e; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form header */
+.create-session-form h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Label and input styling */
+.create-session-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Input fields */
+.create-session-form label select,
+.create-session-form label input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  /* background-color: #2a2a2a; */
+  /* color: #ffffff; */
+  font-size: 1rem;
+}
+
+/* Focus effect for inputs */
+.create-session-form label select:focus,
+.create-session-form label input:focus {
+  border-color: #6200ee;
+  outline: none;
+}
+
+/* Submit button */
+.create-session-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6200ee;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.create-session-form button:hover {
+  background-color: #3700b3;
+}
+
+/* Media queries for tablets and mobile devices */
+@media (max-width: 768px) {
+  .create-session-form {
+    max-width: 95%; /* Allow more width on smaller screens */
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .create-session-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .create-session-form label select,
+  .create-session-form label input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .create-session-form button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media queries for very small devices */
+@media (max-width: 480px) {
+  .create-session-form h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .create-session-form label {
+    font-size: 0.9rem;
+  }
+
+  .create-session-form label select,
+  .create-session-form label input {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .create-session-form button {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
